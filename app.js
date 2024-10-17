@@ -12,10 +12,46 @@ const menuItems = [
   },
   { title: "About", link: "#", icon: "https://via.placeholder.com/24" },
   { title: "Contact", link: "#", icon: "https://via.placeholder.com/24" },
+  { title: "Home", link: "#", icon: "https://via.placeholder.com/24" },
+  {
+    title: "Services",
+    link: "#",
+    icon: "https://via.placeholder.com/24",
+    submenu: [
+      { title: "Design", link: "#", icon: "https://via.placeholder.com/24" },
+      { title: "Development", link: "#", icon: "https://via.placeholder.com/24" },
+    ],
+  },
+  { title: "About", link: "#", icon: "https://via.placeholder.com/24" },
+  { title: "Contact", link: "#", icon: "https://via.placeholder.com/24" },
+  { title: "Home", link: "#", icon: "https://via.placeholder.com/24" },
+  {
+    title: "Services",
+    link: "#",
+    icon: "https://via.placeholder.com/24",
+    submenu: [
+      { title: "Design", link: "#", icon: "https://via.placeholder.com/24" },
+      { title: "Development", link: "#", icon: "https://via.placeholder.com/24" },
+    ],
+  },
+  { title: "About", link: "#", icon: "https://via.placeholder.com/24" },
+  { title: "Contact", link: "#", icon: "https://via.placeholder.com/24" },
+  { title: "Home", link: "#", icon: "https://via.placeholder.com/24" },
+  {
+    title: "Services",
+    link: "#",
+    icon: "https://via.placeholder.com/24",
+    submenu: [
+      { title: "Design", link: "#", icon: "https://via.placeholder.com/24" },
+      { title: "Development", link: "#", icon: "https://via.placeholder.com/24" },
+    ],
+  },
+  { title: "About", link: "#", icon: "https://via.placeholder.com/24" },
+  { title: "Contact", link: "#", icon: "https://via.placeholder.com/24" },
 ];
 
 function createMenu(items) {
-  const menu = document.getElementById("verticalMenu");
+  const menu = document.getElementById("itemsCon");
   items.forEach((item) => {
     const menuItem = document.createElement("a");
     menuItem.href = item.link;

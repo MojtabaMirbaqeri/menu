@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 .vertical-menu {
-  width: 150px;
+  width: 90%;
   height: 100svh;
   position: fixed;
   top: 0;
@@ -26,6 +26,7 @@
   border-top: 1px solid #ddd;
   position: relative;
   transition: all 0.3s ease-in-out;
+  max-width: 100%;
 }
 
 .vertical-menu a img {
@@ -63,16 +64,27 @@
   background-color: #f8f9fa;
   border: 0;
 }
+
+#itemsCon {
+  max-height: 100dvh;
+  width: 150px;
+}
 @media screen and (min-width: 768px) {
-  .vertical-menu {
+  #itemsCon {
     width: 250px;
   }
   .vertical-menu a img {
     width: 100px;
   }
+  .vertical-menu {
+    width: 48%;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .vertical-menu {
+  #itemsCon {
     width: 300px;
+  }
+  .vertical-menu {
+    width: 38%;
   }
 }
